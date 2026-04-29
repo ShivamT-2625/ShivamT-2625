@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import heroImg from './assets/Screenshot 2026-04-14 155152.png'
 
 function App() {
   const [activeSection, setActiveSection] = useState('intro')
@@ -45,24 +46,29 @@ function App() {
       </nav>
 
       <section id="intro" className="hero-section">
-        <div className="hero-content">
-          <div className="hero-tag">SOFTWARE DEVELOPER</div>
-          <h1>SHIVAM <span className="highlight">TIWARI</span></h1>
-          <p className="hero-subtitle">MERN Stack | Machine Learning | Full-Stack Development</p>
-          <div className="hero-links">
-            <a href="https://github.com/ShivamT-2625" target="_blank" rel="noopener noreferrer" className="social-link">
-              GITHUB
-            </a>
-            <a href="https://www.linkedin.com/in/shivamtiwari-028597289/" target="_blank" rel="noopener noreferrer" className="social-link">
-              LINKEDIN
-            </a>
-            <a href="mailto:shivamptiwari55812@gmail.com" className="social-link">
-              EMAIL
-            </a>
+        <div className="hero-grid">
+          <div className="hero-content">
+            <div className="hero-tag">SOFTWARE DEVELOPER</div>
+            <h1>SHIVAM <span className="highlight">TIWARI</span></h1>
+            <p className="hero-subtitle">MERN Stack | Machine Learning | Full-Stack Development</p>
+            <div className="hero-links">
+              <a href="https://github.com/ShivamT-2625" target="_blank" rel="noopener noreferrer" className="social-link">
+                GITHUB
+              </a>
+              <a href="https://www.linkedin.com/in/shivamtiwari-028597289/" target="_blank" rel="noopener noreferrer" className="social-link">
+                LINKEDIN
+              </a>
+              <a href="mailto:shivamptiwari55812@gmail.com" className="social-link">
+                EMAIL
+              </a>
+            </div>
+            <div className="hero-buttons">
+              <button className="btn-primary" onClick={() => scrollToSection('projects')}>VIEW PROJECTS</button>
+              <button className="btn-secondary" onClick={() => scrollToSection('resume')}>RESUME</button>
+            </div>
           </div>
-          <div className="hero-buttons">
-            <button className="btn-primary" onClick={() => scrollToSection('projects')}>VIEW PROJECTS</button>
-            <button className="btn-secondary" onClick={() => scrollToSection('resume')}>RESUME</button>
+          <div className="hero-image-box">
+            <img src={heroImg} alt="Shivam Tiwari" className="hero-image" />
           </div>
         </div>
       </section>

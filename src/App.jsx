@@ -50,7 +50,7 @@ function App() {
           <p className="hero-subtitle">Software Developer | MERN Stack | Machine Learning</p>
           <div className="hero-contact">
             <a href="mailto:shivamptiwari55812@gmail.com">shivamptiwari55812@gmail.com</a>
-            <a href="tel:+918828780053">8828780053</a>
+          
           </div>
           <div className="hero-links">
             <a href="https://github.com/ShivamT-2625" target="_blank" rel="noopener noreferrer" className="social-link">
